@@ -1,0 +1,189 @@
+DEBUG 2014-09-18 17:16:27,491: 	 Executing command: 'submit'
+DEBUG 2014-09-18 17:16:27,492: 	 Found /uscms/home/jdolen/.crab3 file
+DEBUG 2014-09-18 17:16:27,506: 	 Checking credentials
+DEBUG 2014-09-18 17:16:27,506: 	 Found proxy file /tmp/x509up_u11867
+DEBUG 2014-09-18 17:16:27,507: 	 Getting proxy life time left
+DEBUG 2014-09-18 17:16:27,711: 	 Proxy valid for 124:04:10 hours
+INFO 2014-09-18 17:16:27,712: 	 Will use configuration file crab_test2_FileBasedSplitting.py
+DEBUG 2014-09-18 17:16:27,712: 	 Loading configuration
+DEBUG 2014-09-18 17:16:27,825: 	 Checking credentials
+DEBUG 2014-09-18 17:16:27,825: 	 Found proxy file /tmp/x509up_u11867
+DEBUG 2014-09-18 17:16:27,825: 	 Getting proxy life time left
+DEBUG 2014-09-18 17:16:28,029: 	 Proxy valid for 124:04:10 hours
+DEBUG 2014-09-18 17:16:30,845: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(24[34]|3[136]|21|045).cern.ch
+DEBUG 2014-09-18 17:16:30,951: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2014-09-18 17:16:31,956: 	 Myproxy is valid: 1364076
+DEBUG 2014-09-18 17:16:31,956: 	 Command use: submit
+DEBUG 2014-09-18 17:16:31,956: 	 Options use: ['-c', 'crab_test2_FileBasedSplitting.py']
+DEBUG 2014-09-18 17:16:32,936: 	 CRABClient version: 3.3.9 Compatible
+DEBUG 2014-09-18 17:16:32,936: 	 Instance is prod
+DEBUG 2014-09-18 17:16:32,936: 	 Server base url is cmsweb.cern.ch
+DEBUG 2014-09-18 17:16:32,936: 	 Command url /crabserver/prod/workflow
+DEBUG 2014-09-18 17:16:32,936: 	 Started submission
+DEBUG 2014-09-18 17:16:32,936: 	 Working on ./crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+DEBUG 2014-09-18 17:16:34,002: 	 Found CMSSW_7_0_6_patch1 for slc6_amd64_gcc481 with base /uscms_data/d2/jdolen/miniAOD/CMSSW_7_0_6_patch1
+DEBUG 2014-09-18 17:16:34,019: 	 UNIQUE NAME: tarUUID 64ada3c6-cf15-49d0-b4d4-f2ac3635395e 
+DEBUG 2014-09-18 17:16:34,020: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.requestName = 'TTJets_PU40bx25_ClassicMixing_50files_test2'
+config.General.serverUrl = 'cmsweb.cern.ch'
+config.section_('JobType')
+config.JobType.outputFiles = ['out.root']
+config.JobType.filecacheurl = 'https://cmsweb.cern.ch/crabcache'
+config.JobType.pluginName = 'Analysis'
+config.JobType.capath = '/etc/grid-security/certificates/'
+config.JobType.allowNonProductionCMSSW = False
+config.JobType.psetName = 'ana_crab.py'
+config.JobType.proxyfilename = '/tmp/x509up_u11867'
+config.section_('Data')
+config.Data.inputDataset = '/TTJets_MSDecaysCKM_central_Tune4C_13TeV-madgraph-tauola/Spring14miniaod-PU40bx25_POSTLS170_V5-v2/MINIAODSIM'
+config.Data.publication = True
+config.Data.unitsPerJob = 1
+config.Data.ignoreLocality = False
+config.Data.publishDbsUrl = 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter/'
+config.Data.splitting = 'FileBased'
+config.Data.dbsUrl = 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader/'
+config.Data.publishDataName = 'Spring14miniaod-PU40bx25_POSTLS170_V5-v2_ANA'
+config.Data.totalUnits = 50
+config.section_('Site')
+config.Site.storageSite = 'T3_US_FNALLPC'
+
+DEBUG 2014-09-18 17:16:34,020: 	 self.config.JobType.psetName: ana_crab.py
+DEBUG 2014-09-18 17:16:34,020: 	 Importing CMSSW config ana_crab.py
+DEBUG 2014-09-18 17:16:36,697: 	 The following EDM output files will be collected: []
+DEBUG 2014-09-18 17:16:36,697: 	 The following TFile output files will be collected: ['histos_TTJets_premix_mini_PU40bx25_file1.root']
+DEBUG 2014-09-18 17:16:36,697: 	 The following user output files will be collected: ['out.root']
+DEBUG 2014-09-18 17:16:36,697: 	 Writing CMSSW config to ./crab_TTJets_PU40bx25_ClassicMixing_50files_test2/inputs/CMSSW_cfg.py
+DEBUG 2014-09-18 17:16:37,586: 	 Found CMSSW_7_0_6_patch1 for slc6_amd64_gcc481 with base /uscms_data/d2/jdolen/miniAOD/CMSSW_7_0_6_patch1
+DEBUG 2014-09-18 17:16:37,586: 	 Making tarball in ./crab_TTJets_PU40bx25_ClassicMixing_50files_test2/inputs/64ada3c6-cf15-49d0-b4d4-f2ac3635395edefault.tgz
+DEBUG 2014-09-18 17:16:37,587: 	  checking directory /uscms_data/d2/jdolen/miniAOD/CMSSW_7_0_6_patch1/lib
+DEBUG 2014-09-18 17:16:37,587: 	  adding directory /uscms_data/d2/jdolen/miniAOD/CMSSW_7_0_6_patch1/lib to tarball
+DEBUG 2014-09-18 17:16:38,305: 	  checking directory /uscms_data/d2/jdolen/miniAOD/CMSSW_7_0_6_patch1/module
+DEBUG 2014-09-18 17:16:38,712: 	  adding data directory /uscms_data/d2/jdolen/miniAOD/CMSSW_7_0_6_patch1/src/B2G/ttbarDM/TopPlusDMAna/data to tarball
+DEBUG 2014-09-18 17:16:38,841: 	 tgz contents: [('lib', 0, 1404742711, 'jdolen'), ('lib/slc6_amd64_gcc481', 0, 1410920478, 'jdolen'), ('lib/slc6_amd64_gcc481/JetStudiesJetTestingAuto.edmplugin', 41, 1406273264, 'jdolen'), ('lib/slc6_amd64_gcc481/pluginJetStudiesJetTestingAuto.so', 271273, 1406273264, 'jdolen'), ('lib/slc6_amd64_gcc481/pluginMiniValidationMiniAnalyzerAuto.so', 216116, 1410904131, 'jdolen'), ('lib/slc6_amd64_gcc481/pluginMiniValidationAnalyzeMiniPlusSubstructureAuto.so', 233873, 1410920476, 'jdolen'), ('lib/slc6_amd64_gcc481/libAnalysisTTBSMTuplesAnalysis.so', 42282, 1406236134, 'jdolen'), ('lib/slc6_amd64_gcc481/pluginAnalysisTTBSMTuplesAnalysisCapabilities.so', 7046, 1406236512, 'jdolen'), ('lib/slc6_amd64_gcc481/AnalysisTTBSMTuplesAnalysisCapabilities.edmplugin', 56, 1406236512, 'jdolen'), ('lib/slc6_amd64_gcc481/libAnalysisJetAnalysis.so', 282862, 1406236513, 'jdolen'), ('lib/slc6_amd64_gcc481/libAnalysisSHyFT.so', 2136962, 1406272238, 'jdolen'), ('lib/slc6_amd64_gcc481/libAnalysisBoostedTopAnalysis.so', 765825, 1406272240, 'jdolen'), ('lib/slc6_amd64_gcc481/pluginAnalysisTTBSMPatTuplesplugins.so', 649186, 1409941501, 'jdolen'), ('lib/slc6_amd64_gcc481/AnalysisTTBSMPatTuplesplugins.edmplugin', 46, 1409941501, 'jdolen'), ('lib/slc6_amd64_gcc481/pluginAnalysisBoostedTopAnalysisCapabilities.so', 10678, 1409941490, 'jdolen'), ('lib/slc6_amd64_gcc481/AnalysisBoostedTopAnalysisCapabilities.edmplugin', 55, 1409941490, 'jdolen'), ('lib/slc6_amd64_gcc481/MiniValidationMiniAnalyzerAuto.edmplugin', 47, 1410904131, 'jdolen'), ('lib/slc6_amd64_gcc481/pluginB2GB2GprodAuto.so', 86157, 1410463441, 'jdolen'), ('lib/slc6_amd64_gcc481/B2GB2GprodAuto.edmplugin', 31, 1410463441, 'jdolen'), ('lib/slc6_amd64_gcc481/MiniValidationAnalyzeMiniPlusSubstructureAuto.edmplugin', 62, 1410920476, 'jdolen'), ('lib/slc6_amd64_gcc481/.edmplugincache', 1429, 1410920478, 'jdolen'), ('src/B2G/ttbarDM/TopPlusDMAna/data', 0, 1410461631, 'jdolen'), ('src/B2G/ttbarDM/TopPlusDMAna/data/MuHLTEfficiencies_Run_2012ABCD_53X_DR03-2.root', 56001, 1410461631, 'jdolen'), ('src/B2G/ttbarDM/TopPlusDMAna/data/MuonEfficiencies_ISO_Run_2012ReReco_53X.root', 120605, 1410461631, 'jdolen'), ('src/B2G/ttbarDM/TopPlusDMAna/data/MuonEfficiencies_Run2012ReReco_53X.root', 92098, 1410461631, 'jdolen'), ('src/B2G/ttbarDM/TopPlusDMAna/data/SingleMuonTriggerEfficiencies_eta2p1_Run2012ABCD_v5trees.root', 89301, 1410461631, 'jdolen'), ('PSet.py', 101, 1411078597, 'jdolen'), ('PSet.pkl', 1193457, 1411078597, 'jdolen'), ('debug/originalPSet.py', 24127, 1410977041, 'jdolen'), ('debug/crabConfig.py', 1205, 1411078598, 'jdolen')]
+DEBUG 2014-09-18 17:16:38,841: 	 MD5 checksum: 79532c9a69cf9893f514b967edc91b19
+DEBUG 2014-09-18 17:16:38,846: 	  uploading archive to cache /uscms_data/d2/jdolen/miniAOD/CMSSW_7_0_6_patch1/src/MiniValidation/AnalyzeMiniPlusSubstructure/python/crab_TTJets_PU40bx25_ClassicMixing_50files_test2/inputs/64ada3c6-cf15-49d0-b4d4-f2ac3635395edefault.tgz 
+DEBUG 2014-09-18 17:16:42,239: 	 Result uploading input files: ('https://cmsweb.cern.ch/crabcache', 'cb0ee871d59728f58c9a30a208bf17a6130f70065b31221668afdd26af14309d.tar.gz', '79532c9a69cf9893f514b967edc91b19') 
+WARNING 2014-09-18 17:16:42,239: 	 WARNING: The following output files will not be published, as they are not EDM files: ['histos_TTJets_premix_mini_PU40bx25_file1.root', 'out.root']
+INFO 2014-09-18 17:16:42,240: 	 Sending the request to the server
+DEBUG 2014-09-18 17:16:42,240: 	 Submitting {'ignorelocality': 0, 'workflow': 'crab_TTJets_PU40bx25_ClassicMixing_50files_test2', 'adduserfiles': [], 'publishname': 'Spring14miniaod-PU40bx25_POSTLS170_V5-v2_ANA-79532c9a69cf9893f514b967edc91b19', 'savelogsflag': 0, 'nonprodsw': 0, 'tfileoutfiles': ['histos_TTJets_premix_mini_PU40bx25_file1.root'], 'asyncdest': 'T3_US_FNALLPC', 'oneEventMode': 0, 'algoargs': 1, 'saveoutput': 1, 'totalunits': 50, 'cachefilename': 'cb0ee871d59728f58c9a30a208bf17a6130f70065b31221668afdd26af14309d.tar.gz', 'jobarch': 'slc6_amd64_gcc481', 'addoutputfiles': ['out.root'], 'splitalgo': 'FileBased', 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'jobsw': 'CMSSW_7_0_6_patch1', 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publication': 1, 'edmoutfiles': [], 'cacheurl': 'https://cmsweb.cern.ch/crabcache', 'inputdata': '/TTJets_MSDecaysCKM_central_Tune4C_13TeV-madgraph-tauola/Spring14miniaod-PU40bx25_POSTLS170_V5-v2/MINIAODSIM', 'jobtype': 'Analysis'} 
+DEBUG 2014-09-18 17:16:42,240: 	 Encoded submit request: ignorelocality=0&workflow=crab_TTJets_PU40bx25_ClassicMixing_50files_test2&publishname=Spring14miniaod-PU40bx25_POSTLS170_V5-v2_ANA-79532c9a69cf9893f514b967edc91b19&savelogsflag=0&nonprodsw=0&asyncdest=T3_US_FNALLPC&oneEventMode=0&algoargs=1&saveoutput=1&totalunits=50&cachefilename=cb0ee871d59728f58c9a30a208bf17a6130f70065b31221668afdd26af14309d.tar.gz&jobarch=slc6_amd64_gcc481&splitalgo=FileBased&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&jobsw=CMSSW_7_0_6_patch1&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publication=1&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&inputdata=%2FTTJets_MSDecaysCKM_central_Tune4C_13TeV-madgraph-tauola%2FSpring14miniaod-PU40bx25_POSTLS170_V5-v2%2FMINIAODSIM&jobtype=Analysis&addoutputfiles=out.root&tfileoutfiles=histos_TTJets_premix_mini_PU40bx25_file1.root
+DEBUG 2014-09-18 17:16:44,219: 	 Result: {'result': [{'RequestName': '140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2'}]}
+INFO 2014-09-18 17:16:44,221: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2014-09-18 17:16:44,221: 	 Task name: 140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+INFO 2014-09-18 17:16:44,222: 	 Please use 'crab status' to check how the submission process proceed
+DEBUG 2014-09-18 17:18:46,501: 	 Executing command: 'status'
+DEBUG 2014-09-18 17:18:46,501: 	 Found /uscms/home/jdolen/.crab3 file
+DEBUG 2014-09-18 17:18:46,511: 	 Checking credentials
+DEBUG 2014-09-18 17:18:46,511: 	 Found proxy file /tmp/x509up_u11867
+DEBUG 2014-09-18 17:18:46,511: 	 Getting proxy life time left
+DEBUG 2014-09-18 17:18:46,714: 	 Proxy valid for 124:01:51 hours
+DEBUG 2014-09-18 17:18:46,823: 	 Checking credentials
+DEBUG 2014-09-18 17:18:46,823: 	 Found proxy file /tmp/x509up_u11867
+DEBUG 2014-09-18 17:18:46,823: 	 Getting proxy life time left
+DEBUG 2014-09-18 17:18:47,027: 	 Proxy valid for 124:01:51 hours
+DEBUG 2014-09-18 17:18:48,228: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(24[34]|3[136]|21|045).cern.ch
+DEBUG 2014-09-18 17:18:48,333: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2014-09-18 17:18:49,438: 	 Myproxy is valid: 1363938
+DEBUG 2014-09-18 17:18:49,439: 	 Command use: status
+DEBUG 2014-09-18 17:18:49,439: 	 Options use: []
+DEBUG 2014-09-18 17:18:50,390: 	 CRABClient version: 3.3.9 Compatible
+DEBUG 2014-09-18 17:18:50,390: 	 Instance is prod
+DEBUG 2014-09-18 17:18:50,390: 	 Server base url is cmsweb.cern.ch
+DEBUG 2014-09-18 17:18:50,390: 	 Command url /crabserver/prod/workflow
+DEBUG 2014-09-18 17:18:50,390: 	 Looking up detailed status of task 140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+DEBUG 2014-09-18 17:19:02,181: 	 {'status': 'UNKNOWN', 'saveLogs': 'F', 'totalJobdefs': 0, 'jobSetID': '', 'jobsPerStatus': {}, 'taskFailureMsg': 'Node status file not currently available.  Retry in a minute if you just submitted the task', 'failedJobdefs': 0, 'jobdefErrors': [], 'jobList': []}
+INFO 2014-09-18 17:19:02,181: 	 Task name:			140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+INFO 2014-09-18 17:19:02,182: 	 Task status:			UNKNOWN
+ERROR 2014-09-18 17:19:02,182: 	 Error during task information retrieval:	Node status file not currently available.  Retry in a minute if you just submitted the task.
+INFO 2014-09-18 17:19:02,182: 	 
+ERROR 2014-09-18 17:19:02,182: 	 No publication information available yet
+INFO 2014-09-18 17:19:02,182: 	 
+No jobs created yet!
+DEBUG 2014-09-18 17:31:35,669: 	 Executing command: 'status'
+DEBUG 2014-09-18 17:31:35,670: 	 Found /uscms/home/jdolen/.crab3 file
+DEBUG 2014-09-18 17:31:35,685: 	 Checking credentials
+DEBUG 2014-09-18 17:31:35,685: 	 Found proxy file /tmp/x509up_u11867
+DEBUG 2014-09-18 17:31:35,685: 	 Getting proxy life time left
+DEBUG 2014-09-18 17:31:35,888: 	 Proxy valid for 123:49:02 hours
+DEBUG 2014-09-18 17:31:35,996: 	 Checking credentials
+DEBUG 2014-09-18 17:31:35,997: 	 Found proxy file /tmp/x509up_u11867
+DEBUG 2014-09-18 17:31:35,997: 	 Getting proxy life time left
+DEBUG 2014-09-18 17:31:36,200: 	 Proxy valid for 123:49:01 hours
+DEBUG 2014-09-18 17:31:37,729: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(24[34]|3[136]|21|045).cern.ch
+DEBUG 2014-09-18 17:31:37,835: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2014-09-18 17:31:38,940: 	 Myproxy is valid: 1363169
+DEBUG 2014-09-18 17:31:38,940: 	 Command use: status
+DEBUG 2014-09-18 17:31:38,940: 	 Options use: []
+DEBUG 2014-09-18 17:31:39,944: 	 CRABClient version: 3.3.9 Compatible
+DEBUG 2014-09-18 17:31:39,944: 	 Instance is prod
+DEBUG 2014-09-18 17:31:39,944: 	 Server base url is cmsweb.cern.ch
+DEBUG 2014-09-18 17:31:39,944: 	 Command url /crabserver/prod/workflow
+DEBUG 2014-09-18 17:31:39,945: 	 Looking up detailed status of task 140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+DEBUG 2014-09-18 17:31:42,726: 	 {'status': 'SUBMITTED', 'totalJobdefs': 0, 'jobSetID': '140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2', 'publication': {}, 'jobsPerStatus': {'idle': 41, 'running': 9}, 'taskFailureMsg': '', 'failedJobdefs': 0, 'jobList': [['idle', 42], ['idle', 48], ['idle', 43], ['idle', 49], ['idle', 24], ['idle', 25], ['idle', 26], ['idle', 27], ['idle', 20], ['idle', 21], ['idle', 22], ['idle', 23], ['idle', 46], ['idle', 47], ['idle', 44], ['idle', 45], ['idle', 28], ['idle', 29], ['idle', 40], ['idle', 41], ['running', 1], ['running', 3], ['running', 2], ['running', 5], ['running', 4], ['running', 7], ['running', 6], ['running', 9], ['running', 8], ['idle', 39], ['idle', 38], ['idle', 11], ['idle', 10], ['idle', 13], ['idle', 12], ['idle', 15], ['idle', 14], ['idle', 17], ['idle', 16], ['idle', 19], ['idle', 18], ['idle', 31], ['idle', 30], ['idle', 37], ['idle', 36], ['idle', 35], ['idle', 34], ['idle', 33], ['idle', 32], ['idle', 50]], 'jobs': {'30': {'State': 'idle'}, '28': {'State': 'idle'}, '29': {'State': 'idle'}, '24': {'State': 'idle'}, '25': {'State': 'idle'}, '26': {'State': 'idle'}, '27': {'State': 'idle'}, '20': {'State': 'idle'}, '21': {'State': 'idle'}, '48': {'State': 'idle'}, '49': {'State': 'idle'}, '46': {'State': 'idle'}, '47': {'State': 'idle'}, '44': {'State': 'idle'}, '45': {'State': 'idle'}, '42': {'State': 'idle'}, '43': {'State': 'idle'}, '40': {'State': 'idle'}, '41': {'State': 'idle'}, '1': {'State': 'running'}, '3': {'State': 'running'}, '2': {'State': 'running'}, '5': {'State': 'running'}, '4': {'State': 'running'}, '7': {'State': 'running'}, '6': {'State': 'running'}, '9': {'State': 'running'}, '8': {'State': 'running'}, '13': {'State': 'idle'}, '12': {'State': 'idle'}, '14': {'State': 'idle'}, '11': {'State': 'idle'}, '10': {'State': 'idle'}, '39': {'State': 'idle'}, '38': {'State': 'idle'}, '15': {'State': 'idle'}, '22': {'State': 'idle'}, '17': {'State': 'idle'}, '16': {'State': 'idle'}, '19': {'State': 'idle'}, '18': {'State': 'idle'}, '31': {'State': 'idle'}, '23': {'State': 'idle'}, '37': {'State': 'idle'}, '36': {'State': 'idle'}, '35': {'State': 'idle'}, '34': {'State': 'idle'}, '33': {'State': 'idle'}, '32': {'State': 'idle'}, '50': {'State': 'idle'}}, 'jobdefErrors': [], 'outdatasets': [], 'pool': {}}
+INFO 2014-09-18 17:31:42,726: 	 Task name:			140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+INFO 2014-09-18 17:31:42,726: 	 Task status:			SUBMITTED
+INFO 2014-09-18 17:31:42,726: 	 Glidemon monitoring URL:	http://glidemon.web.cern.ch/glidemon/jobs.php?taskname=140918_221643_crab3test-4%3Ajdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+INFO 2014-09-18 17:31:42,726: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=jdolen&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=140918_221643_crab3test-4%3Ajdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+INFO 2014-09-18 17:31:42,726: 	 Details:			idle           82.0% (41/50)
+INFO 2014-09-18 17:31:42,726: 	 				running        18.0% ( 9/50)
+INFO 2014-09-18 17:31:42,726: 	 
+ERROR 2014-09-18 17:31:42,726: 	 No publication information available yet
+DEBUG 2014-09-18 17:42:48,996: 	 Executing command: 'status'
+DEBUG 2014-09-18 17:42:48,997: 	 Found /uscms/home/jdolen/.crab3 file
+DEBUG 2014-09-18 17:42:49,014: 	 Checking credentials
+DEBUG 2014-09-18 17:42:49,014: 	 Found proxy file /tmp/x509up_u11867
+DEBUG 2014-09-18 17:42:49,014: 	 Getting proxy life time left
+DEBUG 2014-09-18 17:42:49,219: 	 Proxy valid for 123:37:48 hours
+DEBUG 2014-09-18 17:42:49,329: 	 Checking credentials
+DEBUG 2014-09-18 17:42:49,330: 	 Found proxy file /tmp/x509up_u11867
+DEBUG 2014-09-18 17:42:49,330: 	 Getting proxy life time left
+DEBUG 2014-09-18 17:42:49,534: 	 Proxy valid for 123:37:48 hours
+DEBUG 2014-09-18 17:42:52,294: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(24[34]|3[136]|21|045).cern.ch
+DEBUG 2014-09-18 17:42:52,399: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2014-09-18 17:42:53,303: 	 Myproxy is valid: 1362494
+DEBUG 2014-09-18 17:42:53,303: 	 Command use: status
+DEBUG 2014-09-18 17:42:53,303: 	 Options use: []
+DEBUG 2014-09-18 17:42:54,316: 	 CRABClient version: 3.3.9 Compatible
+DEBUG 2014-09-18 17:42:54,316: 	 Instance is prod
+DEBUG 2014-09-18 17:42:54,316: 	 Server base url is cmsweb.cern.ch
+DEBUG 2014-09-18 17:42:54,316: 	 Command url /crabserver/prod/workflow
+DEBUG 2014-09-18 17:42:54,316: 	 Looking up detailed status of task 140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+DEBUG 2014-09-18 17:42:59,342: 	 {'status': 'SUBMITTED', 'totalJobdefs': 0, 'jobSetID': '140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2', 'publication': {}, 'jobsPerStatus': {'idle': 30, 'running': 20}, 'taskFailureMsg': '', 'failedJobdefs': 0, 'jobList': [['idle', 42], ['idle', 48], ['idle', 43], ['idle', 49], ['idle', 24], ['idle', 25], ['idle', 26], ['idle', 27], ['running', 20], ['idle', 21], ['idle', 22], ['idle', 23], ['idle', 46], ['idle', 47], ['idle', 44], ['idle', 45], ['idle', 28], ['idle', 29], ['idle', 40], ['idle', 41], ['running', 1], ['running', 3], ['running', 2], ['running', 5], ['running', 4], ['running', 7], ['running', 6], ['running', 9], ['running', 8], ['idle', 39], ['idle', 38], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['running', 16], ['running', 19], ['running', 18], ['idle', 31], ['idle', 30], ['idle', 37], ['idle', 36], ['idle', 35], ['idle', 34], ['idle', 33], ['idle', 32], ['idle', 50]], 'jobs': {'30': {'State': 'idle'}, '28': {'State': 'idle'}, '29': {'State': 'idle'}, '24': {'State': 'idle'}, '25': {'State': 'idle'}, '26': {'State': 'idle'}, '27': {'State': 'idle'}, '20': {'State': 'running'}, '21': {'State': 'idle'}, '48': {'State': 'idle'}, '49': {'State': 'idle'}, '46': {'State': 'idle'}, '47': {'State': 'idle'}, '44': {'State': 'idle'}, '45': {'State': 'idle'}, '42': {'State': 'idle'}, '43': {'State': 'idle'}, '40': {'State': 'idle'}, '41': {'State': 'idle'}, '1': {'State': 'running'}, '3': {'State': 'running'}, '2': {'State': 'running'}, '5': {'State': 'running'}, '4': {'State': 'running'}, '7': {'State': 'running'}, '6': {'State': 'running'}, '9': {'State': 'running'}, '8': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '14': {'State': 'running'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '39': {'State': 'idle'}, '38': {'State': 'idle'}, '15': {'State': 'running'}, '22': {'State': 'idle'}, '17': {'State': 'running'}, '16': {'State': 'running'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '31': {'State': 'idle'}, '23': {'State': 'idle'}, '37': {'State': 'idle'}, '36': {'State': 'idle'}, '35': {'State': 'idle'}, '34': {'State': 'idle'}, '33': {'State': 'idle'}, '32': {'State': 'idle'}, '50': {'State': 'idle'}}, 'jobdefErrors': [], 'outdatasets': [], 'pool': {}}
+INFO 2014-09-18 17:42:59,342: 	 Task name:			140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+INFO 2014-09-18 17:42:59,342: 	 Task status:			SUBMITTED
+INFO 2014-09-18 17:42:59,343: 	 Glidemon monitoring URL:	http://glidemon.web.cern.ch/glidemon/jobs.php?taskname=140918_221643_crab3test-4%3Ajdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+INFO 2014-09-18 17:42:59,343: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=jdolen&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=140918_221643_crab3test-4%3Ajdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+INFO 2014-09-18 17:42:59,343: 	 Details:			idle           60.0% (30/50)
+INFO 2014-09-18 17:42:59,343: 	 				running        40.0% (20/50)
+INFO 2014-09-18 17:42:59,343: 	 
+ERROR 2014-09-18 17:42:59,343: 	 No publication information available yet
+DEBUG 2014-09-19 11:56:15,807: 	 Executing command: 'status'
+DEBUG 2014-09-19 11:56:15,812: 	 Found /uscms/home/jdolen/.crab3 file
+DEBUG 2014-09-19 11:56:15,909: 	 Checking credentials
+DEBUG 2014-09-19 11:56:15,909: 	 Found proxy file /tmp/x509up_u11867
+DEBUG 2014-09-19 11:56:15,910: 	 Getting proxy life time left
+DEBUG 2014-09-19 11:56:16,114: 	 Proxy valid for 105:24:22 hours
+DEBUG 2014-09-19 11:56:16,225: 	 Checking credentials
+DEBUG 2014-09-19 11:56:16,226: 	 Found proxy file /tmp/x509up_u11867
+DEBUG 2014-09-19 11:56:16,226: 	 Getting proxy life time left
+DEBUG 2014-09-19 11:56:16,431: 	 Proxy valid for 105:24:21 hours
+DEBUG 2014-09-19 11:56:17,484: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(24[34]|3[136]|21|045).cern.ch
+DEBUG 2014-09-19 11:56:17,592: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2014-09-19 11:56:18,698: 	 Myproxy is valid: 1296889
+DEBUG 2014-09-19 11:56:18,698: 	 Command use: status
+DEBUG 2014-09-19 11:56:18,698: 	 Options use: []
+DEBUG 2014-09-19 11:56:19,652: 	 CRABClient version: 3.3.9 Compatible
+DEBUG 2014-09-19 11:56:19,652: 	 Instance is prod
+DEBUG 2014-09-19 11:56:19,652: 	 Server base url is cmsweb.cern.ch
+DEBUG 2014-09-19 11:56:19,652: 	 Command url /crabserver/prod/workflow
+DEBUG 2014-09-19 11:56:19,652: 	 Looking up detailed status of task 140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+DEBUG 2014-09-19 11:56:20,724: 	 {'status': 'UNKNOWN', 'saveLogs': 'F', 'totalJobdefs': 0, 'jobSetID': '', 'jobsPerStatus': {}, 'taskFailureMsg': '140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2: Failed to contact Schedd: Failed to fetch ads from schedd.', 'failedJobdefs': 0, 'jobdefErrors': [], 'jobList': []}
+INFO 2014-09-19 11:56:20,724: 	 Task name:			140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2
+INFO 2014-09-19 11:56:20,724: 	 Task status:			UNKNOWN
+ERROR 2014-09-19 11:56:20,724: 	 Error during task information retrieval:	140918_221643_crab3test-4:jdolen_crab_TTJets_PU40bx25_ClassicMixing_50files_test2: Failed to contact Schedd: Failed to fetch ads from schedd..
+INFO 2014-09-19 11:56:20,725: 	 
+ERROR 2014-09-19 11:56:20,725: 	 No publication information available yet
+INFO 2014-09-19 11:56:20,725: 	 
+No jobs created yet!
